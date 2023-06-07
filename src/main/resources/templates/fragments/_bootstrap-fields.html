@@ -1,0 +1,4 @@
+<div th:fragment="input (id,label, type, field)" class="mb-3">
+	<label th:for="${id}" class="form-label" th:text="${label}"></label>
+	<input th:type="${type}" class="form-control" th:id="${id}" th:field="*{__${field}__}">
+</div>
